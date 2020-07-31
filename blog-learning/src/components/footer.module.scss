@@ -1,7 +1,8 @@
 .footer {
-    margin-top: 3rem;
+    // margin-top: 3rem;
     padding: 0;
-    
+    // height: 90px;
+    // flex-shrink: 0;
 }
 
 .footer-social {
@@ -13,7 +14,8 @@
     background-color: #C3CFD9;
     list-style-type: none;
     margin: 0;
-    padding: 10px;
+    padding: 20px;
+    align-items: center;
 }
 
 .footer-link-row {
@@ -22,6 +24,11 @@
 
 .footer-link-col-image {
   
+}
+
+.img-circle {
+    margin: 10px;
+    border-radius: 50%;
 }
 
 .footer-item {
@@ -33,18 +40,13 @@
 
 .footer-item:hover {
     color: #6558F5;
+    text-decoration: none;
 }
 
 .active-footer-item {
     color: #6558F5;
 }
 
-.footer-link {
-    background-color: #C3CFD9;
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-}
 
 .footer-auth {
     background-color: #DFE6ED;

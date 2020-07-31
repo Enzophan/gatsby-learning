@@ -9,10 +9,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Layout = (prpps) => {
 
     return (
-        <div className={layoutStyles.container}>
+        <div>
             <Header />
-            <div className={layoutStyles.content}>
-                {prpps.children}
+            <div className={layoutStyles.container}>
+                <div className={layoutStyles.content}>
+                    {prpps.children}
+                </div>
+
             </div>
             <Footer />
         </div>

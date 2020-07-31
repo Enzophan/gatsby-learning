@@ -57,69 +57,71 @@ const Footer = () => {
       {/* Footer Link */}
 
       <div className={footerStyles.footerLink}>
-        <Row className={footerStyles.footerLinkRow}>
-          <Col xs={12} md={4} className={footerStyles.footerLinkColImage}>
-            <h6 className="">Image</h6>
-            <img
-              width={64}
-              height={64}
-              className="mr-3"
-              src="holder.js/64x64"
-              alt="Generic placeholder"
-            />
-          </Col>
+        <Container>
+          <Row className={footerStyles.footerLinkRow}>
+            <Col xs={12} md={4} className={footerStyles.footerLinkColImage}>
+              {/* <h6 className="">Image</h6> */}
+              <img
+                width={120}
+                height={120}
+                className={footerStyles.imgCircle}
+                src={`../../holder.jpg`}
+                alt="Generic placeholder"
+              />
+            </Col>
 
-          <Col xs={12} md={8}>
-            <Row className={footerStyles.footerLinkRow}>
-              <Col sm={3}>
-                <h5 className="">Company</h5>
-                <p>
-                  <Link className={footerStyles.footerItem} activeClassName={footerStyles.activeFooterItem} to='#!'>About Us</Link>
-                </p>
-              </Col>
+            <Col xs={12} md={8}>
+              <Row className={footerStyles.footerLinkRow}>
+                <Col sm={3}>
+                  <h5 className="">Company</h5>
+                  <p>
+                    <Link className={footerStyles.footerItem} activeClassName={footerStyles.activeFooterItem} to='#!'>About Us</Link>
+                  </p>
+                </Col>
 
-              <Col sm={3}>
-                <h5 className="">Driver</h5>
-                <p>
-                  <Link className={footerStyles.footerItem} activeClassName={footerStyles.activeFooterItem} to='#!'>Be a GOJO driver</Link>
-                </p>
-                <p>
-                  <Link className={footerStyles.footerItem} activeClassName={footerStyles.activeFooterItem} to='#!'>How it works</Link>
-                </p>
-                <p>
-                  <Link className={footerStyles.footerItem} activeClassName={footerStyles.activeFooterItem} to='#!'>Driver Safety</Link>
-                </p>
-                <p>
-                  <Link className={footerStyles.footerItem} activeClassName={footerStyles.activeFooterItem} to='#!'>GOJO Driver Cente</Link>
-                </p>
-              </Col>
+                <Col sm={3}>
+                  <h5 className="">Driver</h5>
+                  <p>
+                    <Link className={footerStyles.footerItem} activeClassName={footerStyles.activeFooterItem} to='#!'>Be a GOJO driver</Link>
+                  </p>
+                  <p>
+                    <Link className={footerStyles.footerItem} activeClassName={footerStyles.activeFooterItem} to='#!'>How it works</Link>
+                  </p>
+                  <p>
+                    <Link className={footerStyles.footerItem} activeClassName={footerStyles.activeFooterItem} to='#!'>Driver Safety</Link>
+                  </p>
+                  <p>
+                    <Link className={footerStyles.footerItem} activeClassName={footerStyles.activeFooterItem} to='#!'>GOJO Driver Cente</Link>
+                  </p>
+                </Col>
 
-              <Col sm={3}>
-                <h5 className="">Rider</h5>
-                <p>
-                  <Link className={footerStyles.footerItem} activeClassName={footerStyles.activeFooterItem} to='#!'>Services</Link>
-                </p>
-                <p>
-                  <Link className={footerStyles.footerItem} activeClassName={footerStyles.activeFooterItem} to='#!'>Why GOJO?</Link>
-                </p>
-                <p>
-                  <Link className={footerStyles.footerItem} activeClassName={footerStyles.activeFooterItem} to='#!'>Book a ride</Link>
-                </p>
-                <p>
-                  <Link className={footerStyles.footerItem} activeClassName={footerStyles.activeFooterItem} to='#!'>Rider Safety</Link>
-                </p>
-              </Col>
+                <Col sm={3}>
+                  <h5 className="">Rider</h5>
+                  <p>
+                    <Link className={footerStyles.footerItem} activeClassName={footerStyles.activeFooterItem} to='#!'>Services</Link>
+                  </p>
+                  <p>
+                    <Link className={footerStyles.footerItem} activeClassName={footerStyles.activeFooterItem} to='#!'>Why GOJO?</Link>
+                  </p>
+                  <p>
+                    <Link className={footerStyles.footerItem} activeClassName={footerStyles.activeFooterItem} to='#!'>Book a ride</Link>
+                  </p>
+                  <p>
+                    <Link className={footerStyles.footerItem} activeClassName={footerStyles.activeFooterItem} to='#!'>Rider Safety</Link>
+                  </p>
+                </Col>
 
-              <Col sm={3}>
-                <h5 className="">Help</h5>
-                <p>
-                  <Link className={footerStyles.footerItem} activeClassName={footerStyles.activeFooterItem} to='#!'>Help Centre</Link>
-                </p>
+                <Col sm={3}>
+                  <h5 className="">Help</h5>
+                  <p>
+                    <Link className={footerStyles.footerItem} activeClassName={footerStyles.activeFooterItem} to='#!'>Help Centre</Link>
+                  </p>
 
-              </Col>
-            </Row>
-          </Col>
-        </Row>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Container>
       </div>
 
       <div className={footerStyles.footerAuth}>

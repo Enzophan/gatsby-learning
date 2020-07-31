@@ -3,6 +3,8 @@ import Header from './header';
 import Footer from './footer';
 import '../styles/index.scss';
 import layoutStyles from './layout.module.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const Layout = (prpps) => {
 

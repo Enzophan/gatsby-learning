@@ -8,6 +8,7 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: "Full-stack bootcamp",
+    description: "Gatsby Learning",
     author: "Zinzo Phan"
   },
   plugins: [
@@ -55,7 +56,21 @@ module.exports = {
           }
         ],
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-intl`,
+      options: {
+        // language JSON resource path
+        path: `${__dirname}/src/intl`,
+        // supported language
+        languages: [`vi`, `en`, `de`],
+        // language file path
+        defaultLanguage: `vi`,
+        // option to redirect to `/vi` when connecting `/`
+        redirect: false,
+        redirectComponent: require.resolve(`./src/components/redirect.js`),
+      },
+    },
   ],
 }
 

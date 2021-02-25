@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import { Container } from 'react-bootstrap';
+import Language from "./language";
 import headerStyles from './header.module.scss';
 
 const Header = () => {
@@ -39,10 +40,15 @@ const Header = () => {
                             <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to='/contact'>Contact</Link>
                         </li>
                     </ul>
+                    <div
+                        style={{
+                            float: `right`,
+                        }}
+                    >
+                        <Language />
+                    </div>
                 </nav>
             </Container>
-
-
         </header>
     )
 }

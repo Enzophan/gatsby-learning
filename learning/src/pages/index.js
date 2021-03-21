@@ -17,7 +17,6 @@ export default function Home({data}) {
           <p>UX designer & web developer based in Da Nang</p>
           <Link className={styles.btn} to="/projects">My Portfolio Projects</Link>
         </div>
-        {/* <img src="/banner.png" alt="site banner" style={{ maxWidth: "100%" }} /> */}
         <Img fluid={data.file.childImageSharp.fluid}/>
       </section>
     </Layout>
